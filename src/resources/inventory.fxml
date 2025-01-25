@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: f4f4f4; -fx-border-color: dcdcdc; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryController">
+   <children>
+      <Label alignment="CENTER" layoutX="232.0" layoutY="19.0" text="INVENTORY" textAlignment="CENTER" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutX="108.0" layoutY="87.0" prefHeight="300.0" prefWidth="395.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="151.0" prefWidth="384.0" spacing="20.0">
+               <children>
+                  <Label text="FOOD" textFill="#555555">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane maxWidth="91.0" prefHeight="84.0" prefWidth="91.0" style="-fx-background-color: ADD8E1;">
+                     <children>
+                        <ImageView fitHeight="84.0" fitWidth="91.0" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/food1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: ADD8E1;">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/food2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: ADD8E1;">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/food3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="80.0">
+               <children>
+                  <Text fx:id="food1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                  <Text fx:id="food2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                  <Text fx:id="food3" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="67.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="156.0" prefWidth="384.0" spacing="20.0">
+               <children>
+                  <Label text="GIFTS" textFill="#555555">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: FFD580;">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/gift1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: FFD580;">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/gift2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane maxWidth="93.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: FFD580;">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/gift3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="80.0">
+               <children>
+                  <Text fx:id="gift1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                  <Text fx:id="gift2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                  <Text fx:id="gift3" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="67.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator layoutX="3.0" layoutY="61.0" prefHeight="26.0" prefWidth="604.0" />
+   </children>
+</AnchorPane>
