@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RevivePetController">
+   <!-- Background Image -->
+   <children>
+      <ImageView fitHeight="349.0" fitWidth="441.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/pawgress_bg.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- VBox for content -->
+      <VBox alignment="CENTER" spacing="15.0">
+         <Label text="Select Pet to Revive" />
+
+         <!-- HBox for pet selection -->
+         <HBox alignment="CENTER" prefHeight="200.0" prefWidth="600.0" spacing="10.0">
+            <children>
+               <!-- Pet 1 -->
+               <VBox alignment="CENTER" spacing="5.0">
+                  <ImageView fx:id="petImageView1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#handlePet1Click"/>
+                  <Label fx:id="petNameLabel1" text="Pet 1" />
+                  <Label fx:id="petScoreLabel1" text="Score: 100" />
+               </VBox>
+
+               <!-- Pet 2 -->
+               <VBox alignment="CENTER" spacing="5.0">
+                  <ImageView fx:id="petImageView2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#handlePet2Click"/>
+                  <Label fx:id="petNameLabel2" text="Pet 2" />
+                  <Label fx:id="petScoreLabel2" text="Score: 120" />
+               </VBox>
+
+               <!-- Pet 3 -->
+               <VBox alignment="CENTER" spacing="5.0">
+                  <ImageView fx:id="petImageView3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#handlePet3Click"/>
+                  <Label fx:id="petNameLabel3" text="Pet 3" />
+                  <Label fx:id="petScoreLabel3" text="Score: 110" />
+               </VBox>
+            </children>
+         </HBox>
+
+         <!-- Buttons -->
+         <Button mnemonicParsing="false" onAction="#revivePet" text="Revive" />
+         <Button mnemonicParsing="false" onAction="#handleBack" text="&lt; Back" />
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TutorialController">
+   <children>
+      <!-- Background Image -->
+      <StackPane prefHeight="410.0" prefWidth="610.0">
+         <children>
+            <ImageView fitHeight="349.0" fitWidth="441.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/resources/pawgress_bg.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <!-- Main StackPane for Slides -->
+      <StackPane fx:id="slideStack" layoutX="10.0" layoutY="10.0" prefHeight="350.0" prefWidth="590.0">
+         <children>
+            <!-- Slide 1 -->
+            <VBox fx:id="slide1" alignment="CENTER" spacing="8.0" prefHeight="350.0" prefWidth="590.0">
+               <children>
+                  <ImageView fx:id="tipImage1" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/tut1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="Welcome to Pawgress! This is a fun and interactive virtual pet game where:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- You raise, nurture, and grow your pet." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Your choices impact your pet’s life." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Every decision shapes your pet’s journey!" />
+               </children>
+            </VBox>
+            <!-- Slide 2 -->
+            <VBox fx:id="slide2" alignment="CENTER" spacing="8.0" prefHeight="350.0" prefWidth="590.0" visible="false">
+               <children>
+                  <ImageView fx:id="tipImage2" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/tut2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="Choose Your Pet Wisely!" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Each pet has unique traits." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Some excel in specific areas, while others require extra care." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Select the pet that best suits your personality and start building a bond!" />
+               </children>
+            </VBox>
+            <!-- Slide 3 -->
+            <VBox fx:id="slide3" alignment="CENTER" spacing="8.0" prefHeight="350.0" prefWidth="590.0" visible="false">
+               <children>
+                  <ImageView fx:id="tipImage3" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/tut3.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="Watch Your Pet Grow!" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- As your pet levels up, it evolves and gains new abilities." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Unlock surprises with each milestone." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Help your pet achieve its full potential through proper care and attention." />
+               </children>
+            </VBox>
+            <!-- Slide 4 -->
+            <VBox fx:id="slide4" alignment="CENTER" spacing="8.0" prefHeight="350.0" prefWidth="590.0" visible="false">
+               <children>
+                  <ImageView fx:id="tipImage4" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/tut4.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="Take Care of Your Pet!" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Feed, nurture, and play with your pet regularly." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Neglect can lead to unhappiness or worse!" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="550.0" style="-fx-font-weight: bold; -fx-font-family: 'PixelFont';" text="- Stay vigilant and make sure your pet is happy and healthy." />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <!-- Navigation Buttons -->
+      <Button fx:id="leftArrow" layoutX="30.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#goToPreviousSlide" text="←" />
+      <Button fx:id="rightArrow" layoutX="550.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#goToNextSlide" text="→" />
+      <!-- Close Button -->
+      <Button fx:id="closeButton" layoutX="560.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeTutorial" text="X" />
+   </children>
+</AnchorPane>
